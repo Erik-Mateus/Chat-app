@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+*{
+    margin: 0 ;
+    padding: 0 ; 
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif;
+}
+
+body{
+
+    color: #dfdfdf;
+
+    background-color: #161616;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #161616 20%, #161616 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161616 20%, #161616 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#0f0f0f 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #0f0f0f 2px, #161616 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+
+    
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    
+    width: 100%;
+    max-width: 400px;
+    background-color: #222222;
+    border-radius: 15px;
+    
+    padding: 20px;
+
+}
+
+.login > h2{
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+.login__Form{
+    display: flex  ;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.login__Input{
+    padding: 10px;
+    width: 70%;
+}
+.login__Input:focus{
+    outline: 3px solid #e4ba05;
+}
+.login__Button{
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    width: 20%;
+    background-color: #757575;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.login__Button:hover{
+    background-color: #e2c541;
+}
+
+.chat{
+    color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chat__Messages{
+    flex-grow: 1;
+    padding: 25px 25px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.chat__Form{
+    background-color: #0c0c0c;
+    padding: 9px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.chat__Input{
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    flex-grow: 1;
+    background-color: #000;
+    color: #ffffff;
+    outline: none;
+    font-size: 1rem;
+}
+.chat__Button{
+    border: none;
+    background-color: #dab200;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    border-radius: 2cap ;
+}
+.chat__Button > span{
+    font-size: 1.8rem;
+}
+.chat__Button:hover{   
+    background-color: #ffd000;
+    border-radius: 1.6cap;
+}
+.chat__Messages > div {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.other__Message{
+    background-color: rgb(5, 5, 5);
+    border-radius: 10px 10px 10px 0px;
+    align-self: flex-start;
+    color: #dfdfdf;
+}
+.message__Sender{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: rgb(98, 151, 230);
+}
+
+.self__Message{
+
+    background-color: rgb(255, 255, 189);
+    color: #121212;
+    border-radius: 10px 10px 0px 10px;
+    align-self: flex-end;
+}
