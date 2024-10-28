@@ -112,7 +112,7 @@ const sendMessage = (event) => {
         content: chatInput.value
     }
 
-    chatInput.value = "digite aqui sua mensagem"
+    chatInput.value = ""
 
     websocket.send(JSON.stringify(message))
 
