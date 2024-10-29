@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
 *{
     margin: 0 ;
     padding: 0 ; 
     box-sizing: border-box; 
     font-family: "Inter", sans-serif;
 }
-
 body{
-  color: #000000;
-
-    background-color: #161616;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #161616 20%, #161616 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161616 20%, #161616 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#0f0f0f 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #0f0f0f 2px, #161616 2px) -1px 0;
-    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-
-
+    background-image: url(../src/bg1.png);
+   color: #cfcfcf;
 }
+
+
+
 
 .container{
 
@@ -30,10 +27,9 @@ body{
     
     width: 100%;
     max-width: 400px;
-    border-radius: 2rem;
-    background-color: #dab200;
+    border-radius: 13px;
     padding: 20px;
-
+    
 }
 
 .login > h2{
@@ -52,15 +48,16 @@ body{
     justify-content: center;
 }
 .login__Input{
+    border: none;
     padding: 10px;
     width: 70%;
-    border-radius: 2rem;
+    border-radius:2rem;
     background-color: #ffffff;
    
 
 }
 .login__Input:focus{
-    outline: 3px solid #e4ba05;
+    outline: 2px solid #131313;
 }
 .login__Button{
     border: none;
@@ -72,7 +69,7 @@ body{
     cursor: pointer;
 }
 .login__Button:hover{
-    background-color: #e2c541;
+    background-color: rgb(255, 255, 255);
 }
 
 .chat{
@@ -116,7 +113,7 @@ body{
 }
 .chat__Button{
     border: none;
-    background-color: #dab200;
+    background-color: #cfcfcf;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -128,7 +125,7 @@ body{
     font-size: 1.8rem;
 }
 .chat__Button:hover{   
-    background-color: #fbff00;
+    background-color: #ffffff;
     border-radius: 1.6cap;
 }
 .chat__Messages > div {
@@ -142,8 +139,8 @@ body{
 }
 
 .other__Message{
-    background-color:#045891;
-    border-radius: 10px 10px 10px 0px;
+    background-color:#232324;
+    border-radius: 0px 11px 11px 15px;
     align-self: flex-start;
     color: #ffffff;
 }
@@ -156,8 +153,8 @@ body{
 
 .self__Message{
 
-    background-color: rgb(206, 185, 0);
+    background-color: #cfcfcf;
     color: #121212;
-    border-radius: 10px 10px 0px 10px;
+    border-radius: 8px 4px 16px 8px;
     align-self: flex-end;
 }
